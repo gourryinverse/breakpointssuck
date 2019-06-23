@@ -1,0 +1,17 @@
+The program here is written to check a simple value in two stack integers.
+
+int i = 0xCC;
+int x = 0x00;
+if (i == x)
+   printf("ALART! ALART!\n");
+
+this program should clearly never print an ALART
+
+gdb ./main
+
+set a breakpoint at 0x40053F
+b *0x40053F
+
+run the program
+
+:] breakpoints suck.
